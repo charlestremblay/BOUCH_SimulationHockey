@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    style="@style/LLA1"
+    tools:context="dicj.info.simulationhockey.choixEquipe">
+
+    <Button
+        android:id="@+id/buttonA1"
+        android:enabled="false"
+        android:text="@string/buttonA1"
+        style="@style/buttonA1"
+        android:onClick="boutonA1"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/TLA1">
+
+    <TableRow
+        style="@style/LLchoixEquipe">
+    <TextView
+        style="@style/teamNames"
+        android:text="@string/ducks" />
+        <ImageView
+            style="@style/IVchoixEquipe"
+            android:background="@drawable/ducks"/>
+    </TableRow>
+
+    <TableRow
+        style="@style/LLchoixEquipe">
+    <TextView
+        style="@style/teamNames"
+        android:text="@string/coyotes" />
+        <ImageView
+            style="@style/IVchoixEquipe"
+            android:src="@drawable/coyotes"/>
+    </TableRow>
+
+    <TableRow
+        style="@style/LLchoixEquipe">
+    <TextView
+        style="@style/teamNames"
+        android:text="@string/bruins" />
+        <ImageView
+            style="@style/IVchoixEquipe"
+            android:src="@drawable/bruins"/>
+</TableRow>
+
+    <TableRow
+        style="@style/LLchoixEquipe">
+    <TextView
+        style="@style/teamNames"
+        android:text="@string/sabres" />
+        <ImageView
+            style="@style/IVchoixEquipe"
+            android:src="@drawable/sabres"/>
+</TableRow>
+
+    <TableRow
+        style="@style/LLchoixEquipe">
+    <TextView
+        style="@style/teamNames"
+        android:text="@string/flames" />
+        <ImageView
+            style="@style/IVchoixEquipe"
+            android:src="@drawable/flames"/>
+</TableRow>
+
+    <TableRow
+        style="@style/LLchoixEquipe">
+    <TextView
+        style="@style/teamNames"
+        android:text="@string/hurricanes" />
+        <ImageView
+            style="@style/IVchoixEquipe"
+            android:src="@drawable/hurricanes"/>
+</TableRow>
+
+    <TableRow
+        style="@style/LLchoixEquipe">
+    <TextView
+        style="@style/teamNames"
+        android:text="@string/blackhawks" />
+        <ImageView
+            style="@style/IVchoixEquipe"
+            android:src="@drawable/blackhawks"/>
+   </TableRow>
+
+    <TableRow
+            style="@style/LLchoixEquipe">
+    <TextView
+        style="@style/teamNames"
+        android:text="@string/avalanche" />
+        <ImageView
+            style="@style/IVchoixEquipe"
+            android:src="@drawable/avalanche"/>
+</TableRow>
+
+        <TableRow
+            style="@style/LLchoixEquipe">
+    <TextView
+        style="@style/teamNames"
+        android:text="@string/blue_jackets" />
+            <ImageView
+                style="@style/IVchoixEquipe"
+                android:src="@drawable/blue_jackets"/>
+</TableRow>
+
+        <TableRow
+            style="@style/LLchoixEquipe">
+    <TextView
+        style="@style/teamNames"
+        android:text="@string/stars" />
+            <ImageView
+                style="@style/IVchoixEquipe"
+                android:src="@drawable/stars"/>
+</TableRow>
+
+    <TableRow
+        style="@style/LLchoixEquipe">
+    <TextView
+        style="@style/teamNames"
+        android:text="@string/red_wings" />
+        <ImageView
+            style="@style/IVchoixEquipe"
+            android:src="@drawable/red_wings"/>
+</TableRow>
+
+    <TableRow
+        style="@style/LLchoixEquipe">
+    <TextView
+        style="@style/teamNames"
+        android:text="@string/oilers" />
+        <ImageView
+            style="@style/IVchoixEquipe"
+            android:src="@drawable/oilers"/>
+</TableRow>
+
+    <TableRow
+        style="@style/LLchoixEquipe">
+    <TextView
+        style="@style/teamNames"
+        android:text="@string/panthers" />
+        <ImageView
+            style="@style/IVchoixEquipe"
+            android:src="@drawable/panthers"/>
+</TableRow>
+
+    <TableRow
+        style="@style/LLchoixEquipe">
+    <TextView
+        style="@style/teamNames"
+        android:text="@string/kings" />
+        <ImageView
+            style="@style/IVchoixEquipe"
+            android:src="@drawable/kings"/>
+</TableRow>
+
+    <TableRow
+        style="@style/LLchoixEquipe">
+    <TextView
+        style="@style/teamNames"
+        android:text="@string/wild" />
+        <ImageView
+            style="@style/IVchoixEquipe"
+            android:src="@drawable/wild"/>
+</TableRow>
+
+    <TableRow
+        style="@style/LLchoixEquipe">
+    <TextView
+        style="@style/teamNames"
+        android:text="@string/canadiens" />
+        <ImageView
+            style="@style/IVchoixEquipe"
+            android:src="@drawable/canadiens"/>
+</TableRow>
+
+    <TableRow
+        style="@style/LLchoixEquipe">
+    <TextView
+        style="@style/teamNames"
+        android:text="@string/predators" />
+        <ImageView
+            style="@style/IVchoixEquipe"
+            android:src="@drawable/predators"/>
+</TableRow>
+
+    <TableRow
+        style="@style/LLchoixEquipe">
+    <TextView
+        style="@style/teamNames"
+        android:text="@string/devils" />
+        <ImageView
+            style="@style/IVchoixEquipe"
+            android:src="@drawable/devils"/>
+</TableRow>
+
+    <TableRow
+        style="@style/LLchoixEquipe">
+    <TextView
+        style="@style/teamNames"
+        android:text="@string/islanders" />
+        <ImageView
+            style="@style/IVchoixEquipe"
+            android:src="@drawable/islanders"/>
+</TableRow>
+
+    <TableRow
+        style="@style/LLchoixEquipe">
+    <TextView
+        style="@style/teamNames"
+        android:text="@string/rangers" />
+        <ImageView
+            style="@style/IVchoixEquipe"
+            android:src="@drawable/rangers"/>
+</TableRow>
+
+    <TableRow
+        style="@style/LLchoixEquipe">
+    <TextView
+        style="@style/teamNames"
+        android:text="@string/senators" />
+        <ImageView
+            style="@style/IVchoixEquipe"
+            android:src="@drawable/senators"/>
+</TableRow>
+
+    <TableRow
+        style="@style/LLchoixEquipe">
+    <TextView
+        style="@style/teamNames"
+        android:text="@string/flyers" />
+        <ImageView
+            style="@style/IVchoixEquipe"
+            android:src="@drawable/flyers"/>
+</TableRow>
+
+    <TableRow
+        style="@style/LLchoixEquipe">
+    <TextView
+        style="@style/teamNames"
+        android:text="@string/penguins" />
+        <ImageView
+            style="@style/IVchoixEquipe"
+            android:src="@drawable/penguins"/>
+</TableRow>
+
+    <TableRow
+        style="@style/LLchoixEquipe">
+    <TextView
+        style="@style/teamNames"
+        android:text="@string/sharks" />
+        <ImageView
+            style="@style/IVchoixEquipe"
+            android:src="@drawable/sharks"/>
+</TableRow>
+
+    <TableRow
+        style="@style/LLchoixEquipe">
+    <TextView
+        style="@style/teamNames"
+        android:text="@string/blues" />
+        <ImageView
+            style="@style/IVchoixEquipe"
+            android:src="@drawable/blues"/>
+</TableRow>
+
+    <TableRow
+        style="@style/LLchoixEquipe">
+    <TextView
+        style="@style/teamNames"
+        android:text="@string/lightning" />
+        <ImageView
+            style="@style/IVchoixEquipe"
+            android:src="@drawable/lightning"/>
+</TableRow>
+
+    <TableRow
+        style="@style/LLchoixEquipe">
+    <TextView
+        style="@style/teamNames"
+        android:text="@string/maple_leafs" />
+        <ImageView
+            style="@style/IVchoixEquipe"
+            android:src="@drawable/maple_leafs"/>
+</TableRow>
+
+    <TableRow
+        style="@style/LLchoixEquipe">
+    <TextView
+        style="@style/teamNames"
+        android:text="@string/canucks" />
+        <ImageView
+            style="@style/IVchoixEquipe"
+            android:src="@drawable/canucks"/>
+</TableRow>
+
+    <TableRow
+        style="@style/LLchoixEquipe">
+    <TextView
+        style="@style/teamNames"
+        android:text="@string/capitals" />
+        <ImageView
+            style="@style/IVchoixEquipe"
+            android:src="@drawable/capitals"/>
+</TableRow>
+
+    <TableRow
+        style="@style/LLchoixEquipe">
+    <TextView
+        style="@style/teamNames"
+        android:text="@string/jets" />
+        <ImageView
+            style="@style/IVchoixEquipe"
+            android:src="@drawable/jets"/>
+        </TableRow>
+
+        </TableLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
+

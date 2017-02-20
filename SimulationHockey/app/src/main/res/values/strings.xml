@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Simulation de Hockey</string>
+
+    <!-- Noms des équipes -->
+    <string name="ducks">Ducks d\'Anaheim</string>
+    <string name="coyotes">Coyotes de l\'Arizona</string>
+    <string name="bruins">Bruins de Boston</string>
+    <string name="sabres">Sabres de Buffalo</string>
+    <string name="flames">Flames de Calgary</string>
+    <string name="hurricanes">Hurricanes de la Caroline</string>
+    <string name="blackhawks">Blackhawks de Chicago</string>
+    <string name="avalanche">Avalanche du Colorado</string>
+    <string name="blue_jackets">Blue Jackets de Colombus</string>
+    <string name="stars">Stars de Dallas</string>
+    <string name="red_wings">Red Wings de Détroit</string>
+    <string name="oilers">Oilers d\'Edmonton</string>
+    <string name="panthers">Panthers de la Floride</string>
+    <string name="kings">Kings de Los Angeles</string>
+    <string name="wild">Wild du Minnesota</string>
+    <string name="canadiens">Canadiens de Montréal</string>
+    <string name="predators">Predators de Nashville</string>
+    <string name="devils">Devils du New Jersey</string>
+    <string name="islanders">Islanders de New York</string>
+    <string name="rangers">Rangers de New York</string>
+    <string name="senators">Senators d\'Ottawa</string>
+    <string name="flyers">Flyers de Philadelphie</string>
+    <string name="penguins">Penguins de Pittsburgh</string>
+    <string name="sharks">Sharks de San José</string>
+    <string name="blues">Blues de St-Louis</string>
+    <string name="lightning">Lightning de Tampa Bay</string>
+    <string name="maple_leafs">Maple Leafs de Toronto</string>
+    <string name="canucks">Canucks de Vancouver</string>
+    <string name="capitals">Capitals de Washington</string>
+    <string name="jets">Jets de Winnipeg</string>
+
+    <string name="buttonA1">Commencer</string>
+
+    <string name="toastButtonA1">Sélectionnez une équipe avant de poursuivre!</string>
+
+</resources>
