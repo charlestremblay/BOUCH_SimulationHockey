@@ -15,16 +15,21 @@ public class choixEquipe extends AppCompatActivity {
         setContentView(R.layout.activity_choix_equipe);
     }
 
-    public void boutonA1(Button button){
+    public void selectTeam (View v){
+
+        Button button = (Button)findViewById(R.id.buttonA1);
+
         if(button.isEnabled() == false)
         {
-            Toast.makeText(getApplicationContext(), "@string/toastButtonA1", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), R.string.toastButtonA1, Toast.LENGTH_SHORT).show();
             Log.i("DICJ.info","Le bouton est désactivé.");
+            button.setEnabled(true);
         }
         else
         {
-            Toast.makeText(getApplicationContext(), "Une équipe est sélectionnée!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), , Toast.LENGTH_SHORT).show();
             Log.i("DICJ.info","Le bouton est activé.");
+            button.setEnabled(false);
         }
     }
 }

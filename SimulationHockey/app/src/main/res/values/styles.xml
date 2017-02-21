@@ -15,6 +15,7 @@
 
     <style name="TLA1">
         <item name="android:textColor">@color/white</item>
+        <item name="android:onClick">selectTeam</item>
     </style>
 
     <style name="teamNames">

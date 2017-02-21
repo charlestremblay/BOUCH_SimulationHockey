@@ -16,8 +16,7 @@
         android:id="@+id/buttonA1"
         android:enabled="false"
         android:text="@string/buttonA1"
-        style="@style/buttonA1"
-        android:onClick="boutonA1"/>
+        style="@style/buttonA1" />
 
     <ScrollView
         android:layout_width="match_parent"

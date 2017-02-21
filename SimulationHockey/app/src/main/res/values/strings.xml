@@ -35,6 +35,6 @@
 
     <string name="buttonA1">Commencer</string>
 
-    <string name="toastButtonA1">Sélectionnez une équipe avant de poursuivre!</string>
+    <string name="selectTeam1">Sélectionnez une équipe avant de poursuivre!</string>
 
 </resources>
