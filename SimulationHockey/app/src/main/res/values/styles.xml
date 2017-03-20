@@ -13,9 +13,12 @@
         <item name="android:background">@color/backgroundA1</item>
     </style>
 
+    <style name="LLA2">
+        <item name="android:background">@color/buttonBackgroundA1</item>
+    </style>
+
     <style name="TLA1">
         <item name="android:textColor">@color/white</item>
-        <item name="android:onClick">selectTeam</item>
     </style>
 
     <style name="teamNames">
@@ -28,6 +31,7 @@
     <style name="LLchoixEquipe">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">50sp</item>
+        <item name="android:onClick">selectTeam</item>
     </style>
 
     <style name="IVchoixEquipe">
@@ -44,6 +48,24 @@
         <item name="android:textColor">@color/buttonTextColorA1</item>
         <item name="android:background">@color/buttonBackgroundA1</item>
         <item name="android:layout_marginBottom">20sp</item>
+    </style>
+
+    <style name="buttonA2">
+        <item name="android:layout_width">150sp</item>
+        <item name="android:layout_height">100sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/buttonBackgroundA1</item>
+        <item name="android:background">@color/backgroundA1</item>
+        <item name="android:layout_marginBottom">20sp</item>
+    </style>
+
+    <style name="TVA2">
+        <item name="android:layout_width">200sp</item>
+        <item name="android:layout_height">35sp</item>
+        <item name="android:layout_marginTop">10sp</item>
+        <item name="android:textColor">@color/backgroundA1</item>
+        <item name="android:textSize">25sp</item>
     </style>
 
 </resources>

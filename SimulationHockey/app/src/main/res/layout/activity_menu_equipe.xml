@@ -1,10 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    style="@style/LLA1">
+    style="@style/LLA2">
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/ficheActuelle"
+        android:text="@string/ficheActuelle"
+        style="@style/TVA2"/>
+
+    <TextView
+        android:id="@+id/ficheEquipe"
+        style="@style/TVA2"
+        android:layout_toRightOf="@id/ficheActuelle"
+        android:gravity="right"/>
+
+    <TextView
+        android:id="@+id/TVPointsObtenus"
+        style="@style/TVA2"
+        android:layout_below="@id/ficheActuelle"
+        android:text="@string/pointsObtenus"/>
+
+    <TextView
+        android:id="@+id/TVPoints"
+        android:layout_toRightOf="@id/TVPointsObtenus"
+        android:layout_below="@id/ficheEquipe"
+        style="@style/TVA2"
+        android:gravity="right"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="35sp"
+        android:id="@+id/TVTeamA2"
+        android:layout_below="@id/TVPointsObtenus"
+        android:layout_marginTop="10sp"
+        android:textColor="@color/backgroundA1"
+        android:gravity="center"
+        android:textSize="25sp"/>
+
+    <ImageView android:layout_width="200sp" android:layout_height="200sp"
+        android:layout_marginLeft="110sp"
+        android:layout_marginTop="10sp"
+        android:layout_below="@id/TVTeamA2"
+        android:id="@+id/IVA2"/>
+
+    <Button
+        android:id="@+id/btnMatch"
+        android:layout_below="@id/IVA2"
+        android:layout_marginTop="50sp"
+        android:layout_marginLeft="30sp"
+        style="@style/buttonA2"
+        android:text="@string/btnMatch"
+        android:onClick="boutonMatch"/>
+
+    <Button
+        android:id="@+id/btnSaison"
+        android:layout_below="@id/IVA2"
+        android:layout_marginTop="50sp"
+        android:layout_marginLeft="230sp"
+        style="@style/buttonA2"
+        android:text="@string/btnSaison"/>
+
+    <Button
+        android:layout_width="150sp"
+        android:layout_height="100sp"
+        style="@style/buttonA2"
+        android:layout_below="@id/btnMatch"
+        android:layout_marginLeft="135sp"
+        android:text="@string/retour"
+        android:onClick="btnRetourA2"/>
+
+</RelativeLayout>

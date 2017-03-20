@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/LLA2">
+
+    <TextView
+        android:layout_width="130sp"
+        android:layout_height="35sp"
+        style="@style/TVA2"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="0sp"
+        android:text="@string/exterieur"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="130sp"
+        android:layout_height="35sp"
+        style="@style/TVA2"
+        android:layout_marginLeft="240sp"
+        android:layout_marginTop="0sp"
+        android:text="@string/domicile"
+        android:gravity="center"/>
+
+    <ImageView
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:id="@+id/IVVisiteurs"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="30sp" />
+
+    <TextView
+        android:layout_width="50sp"
+        android:layout_height="35sp"
+        android:id="@+id/TVVS"
+        android:layout_marginTop="80sp"
+        android:layout_toRightOf="@id/IVVisiteurs"
+        android:text="@string/TVVS"
+        android:gravity="center"
+        style="@style/TVA2"/>
+
+    <ImageView
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:id="@+id/IVDomicile"
+        android:layout_toRightOf="@id/TVVS"
+        android:layout_marginRight="30sp"
+        android:layout_marginTop="30sp"/>
+
+    <TextView
+        android:layout_width="300sp"
+        android:layout_height="35sp"
+        android:id="@+id/TVA3"
+        android:layout_below="@id/IVVisiteurs"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="20sp"
+        style="@style/TVA2"/>
+
+    <Button
+        android:layout_width="200sp"
+        android:layout_height="150sp"
+        android:id="@+id/btnSimuler"
+        style="@style/buttonA2"
+        android:layout_below="@id/TVA3"
+        android:layout_marginLeft="110sp"
+        android:layout_marginTop="50sp"
+        android:text="@string/simuler"/>
+
+    <Button
+        android:layout_width="150sp"
+        android:layout_height="100sp"
+        style="@style/buttonA2"
+        android:layout_below="@id/btnSimuler"
+        android:layout_marginLeft="135sp"
+        android:text="@string/retour"
+        android:onClick="btnRetourA3"/>
+
+</RelativeLayout>

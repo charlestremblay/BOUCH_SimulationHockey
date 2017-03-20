@@ -34,7 +34,17 @@
     <string name="jets">Jets de Winnipeg</string>
 
     <string name="buttonA1">Commencer</string>
-
-    <string name="selectTeam1">Sélectionnez une équipe avant de poursuivre!</string>
+    <string name="TVChoixEquipe">Sélectionnez une équipe pour poursuivre.</string>
+    <string name="selectTeam1">Une équipe est sélectionnée.</string>
+    <string name="selectTeam2">Équipe déselectionnée.</string>
+    <string name="ficheActuelle">Fiche actuelle : </string>
+    <string name="btnMatch">Simuler le prochain match</string>
+    <string name="btnSaison">Simuler le reste de la saison</string>
+    <string name="pointsObtenus">Points obtenus : </string>
+    <string name="TVVS">VS</string>
+    <string name="exterieur">Extérieur</string>
+    <string name="domicile">Domicile</string>
+    <string name="simuler">Simuler</string>
+    <string name="retour">Retour</string>
 
 </resources>
