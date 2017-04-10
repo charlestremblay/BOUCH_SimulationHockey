@@ -45,6 +45,15 @@
         android:layout_below="@id/TVTeamA2"
         android:id="@+id/IVA2"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        style="@style/TVA2"
+        android:id="@+id/TVSaisonFinie"
+        android:text="@string/saisonFinie"
+        android:layout_below="@id/IVA2"
+        android:gravity="center"
+        android:visibility="invisible"/>
+
     <Button
         android:id="@+id/btnMatch"
         android:layout_below="@id/IVA2"

@@ -46,5 +46,9 @@
     <string name="domicile">Domicile</string>
     <string name="simuler">Simuler</string>
     <string name="retour">Retour</string>
+    <string name="confirmation">Êtes-vous sûr de vouloir revenir en arrière? Tous les progrès seront perdus.</string>
+    <string name="oui">Oui</string>
+    <string name="non">Non</string>
+    <string name="saisonFinie">La saison est terminée!</string>
 
 </resources>

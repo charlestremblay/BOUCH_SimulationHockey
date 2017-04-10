@@ -1,10 +1,14 @@
 package dicj.info.simulationhockey;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -13,14 +17,15 @@ import org.w3c.dom.Text;
 public class menuEquipe  extends AppCompatActivity {
 
     public static String ficheEquipe;
-    private int nbrVictoires = 0, nbrDefaites = 0, nbrDefaitesProl = 0, nbrPoints = 0;
+    public static int nbrVictoires = 0, nbrDefaites = 0, nbrDefaitesProl = 0, nbrPoints = 0, matchsJoues = 75;
     public static int drawableId;
+    public static boolean nouvelleFiche = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_equipe);
-        ficheEquipe = Integer.toString(nbrVictoires) + "-" + Integer.toString(nbrDefaites) + "-" + Integer.toString(nbrDefaitesProl);
+        ficheEquipe = Integer.toString(0) + "-" + Integer.toString(0) + "-" + Integer.toString(0);
         TextView TV = (TextView) findViewById(R.id.TVTeamA2);
         TextView TVFiche = (TextView) findViewById(R.id.ficheEquipe);
         TextView TVPoints = (TextView) findViewById(R.id.TVPoints);
@@ -152,14 +157,85 @@ public class menuEquipe  extends AppCompatActivity {
         }
     }
 
+    @Override
+    protected void onResume(){
+        super.onResume();
+        TextView TVFiche = (TextView) findViewById(R.id.ficheEquipe);
+        TextView TVPoints = (TextView) findViewById(R.id.TVPoints);
+        Button btnMatch = (Button) findViewById(R.id.btnMatch);
+        Button btnSaison = (Button) findViewById(R.id.btnSaison);
+        TextView TVSaisonFinie = (TextView) findViewById(R.id.TVSaisonFinie);
+
+        matchsJoues++;
+
+        if(matchsJoues < 82) {
+            if (nouvelleFiche == true) {
+                nbrVictoires = 0;
+                nbrDefaites = 0;
+                nbrDefaitesProl = 0;
+                nbrPoints = 0;
+                ficheEquipe = Integer.toString(nbrVictoires) + "-" + Integer.toString(nbrDefaites) + "-" + Integer.toString(nbrDefaitesProl);
+                TVPoints.setText(String.valueOf(nbrPoints));
+            } else {
+                ficheEquipe = Integer.toString(nbrVictoires) + "-" + Integer.toString(nbrDefaites) + "-" + Integer.toString(nbrDefaitesProl);
+                TVFiche.setText(String.valueOf(ficheEquipe));
+                TVPoints.setText(String.valueOf(nbrPoints));
+            }
+        }
+        else{
+            if(nouvelleFiche == true){
+                nbrVictoires = 0;
+                nbrDefaites = 0;
+                nbrDefaitesProl = 0;
+                nbrPoints = 0;
+            }
+            ficheEquipe = Integer.toString(nbrVictoires) + "-" + Integer.toString(nbrDefaites) + "-" + Integer.toString(nbrDefaitesProl);
+            TVFiche.setText(String.valueOf(ficheEquipe));
+            TVPoints.setText(String.valueOf(nbrPoints));
+            btnMatch.setEnabled(false);
+            btnSaison.setEnabled(false);
+            TVSaisonFinie.setVisibility(View.VISIBLE);
+        }
+        Log.i("DICJ.info", "Matchs joués : " + String.valueOf(matchsJoues));
+        nouvelleFiche = false;
+    }
+
+    @Override
+    public void onBackPressed(){
+        new AlertDialog.Builder(this)
+        .setMessage(menuEquipe.this.getString(R.string.confirmation))
+        .setCancelable(false)
+        .setPositiveButton(menuEquipe.this.getString(R.string.oui), new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                nouvelleFiche = true;
+                matchsJoues = 75;
+                Intent intentRetourA2 = new Intent(menuEquipe.this, choixEquipe.class);
+                startActivity(intentRetourA2);
+            }
+        })
+                .setNegativeButton(menuEquipe.this.getString(R.string.non), null)
+                .show();
+    }
+
     public void boutonMatch (View button){
         Intent intentA3 = new Intent(menuEquipe.this, match.class);
         startActivity(intentA3);
     }
 
     public void btnRetourA2(View button){
-        Intent intentRetourA2 = new Intent(menuEquipe.this, choixEquipe.class);
-        startActivity(intentRetourA2);
+        new AlertDialog.Builder(this)
+                .setMessage(menuEquipe.this.getString(R.string.confirmation))
+                .setCancelable(false)
+                .setPositiveButton(menuEquipe.this.getString(R.string.oui), new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        nouvelleFiche = true;
+                        matchsJoues = 75;
+                        Intent intentRetourA2 = new Intent(menuEquipe.this, choixEquipe.class);
+                        startActivity(intentRetourA2);
+                    }
+                })
+                .setNegativeButton(menuEquipe.this.getString(R.string.non), null)
+                .show();
     }
 
 }

@@ -23,28 +23,29 @@
         android:gravity="center"/>
 
     <ImageView
-        android:layout_width="150sp"
-        android:layout_height="150sp"
+        android:layout_width="90sp"
+        android:layout_height="90sp"
         android:id="@+id/IVVisiteurs"
-        android:layout_marginLeft="30sp"
+        android:layout_marginLeft="60sp"
         android:layout_marginTop="30sp" />
 
     <TextView
         android:layout_width="50sp"
         android:layout_height="35sp"
         android:id="@+id/TVVS"
-        android:layout_marginTop="80sp"
+        android:layout_marginTop="60sp"
         android:layout_toRightOf="@id/IVVisiteurs"
+        android:layout_marginLeft="30sp"
         android:text="@string/TVVS"
         android:gravity="center"
         style="@style/TVA2"/>
 
     <ImageView
-        android:layout_width="150sp"
-        android:layout_height="150sp"
+        android:layout_width="90sp"
+        android:layout_height="90sp"
         android:id="@+id/IVDomicile"
         android:layout_toRightOf="@id/TVVS"
-        android:layout_marginRight="30sp"
+        android:layout_marginLeft="30sp"
         android:layout_marginTop="30sp"/>
 
     <TextView
@@ -64,7 +65,8 @@
         android:layout_below="@id/TVA3"
         android:layout_marginLeft="110sp"
         android:layout_marginTop="50sp"
-        android:text="@string/simuler"/>
+        android:text="@string/simuler"
+        android:onClick="btnSimulation"/>
 
     <Button
         android:layout_width="150sp"
