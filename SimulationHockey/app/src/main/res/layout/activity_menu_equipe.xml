@@ -69,15 +69,189 @@
         android:layout_marginTop="50sp"
         android:layout_marginLeft="230sp"
         style="@style/buttonA2"
-        android:text="@string/btnSaison"/>
+        android:text="@string/btnSaison"
+        android:onClick="btnSimulerSaison"/>
 
     <Button
         android:layout_width="150sp"
         android:layout_height="100sp"
         style="@style/buttonA2"
+        android:id="@+id/btnRetour"
         android:layout_below="@id/btnMatch"
         android:layout_marginLeft="135sp"
         android:text="@string/retour"
         android:onClick="btnRetourA2"/>
+
+    <Button
+        android:layout_width="125sp"
+        android:layout_height="70sp"
+        style="@style/buttonA2"
+        android:text="@string/alignementDépart"
+        android:textSize="18sp"
+        android:layout_toRightOf="@id/btnRetour"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="520sp"
+        android:onClick="btnAlignement"/>
+
+    <Button
+        android:layout_width="125sp"
+        android:layout_height="70sp"
+        android:id="@+id/btnSauvegarder"
+        style="@style/buttonA2"
+        android:layout_marginTop="520sp"
+        android:text="@string/sauvegarder"
+        android:visibility="gone"
+        android:onClick="sauvegarderSaison"/>
+
+    <Button
+        android:layout_width="90sp"
+        android:layout_height="70sp"
+        android:id="@+id/btnAfficherFichier"
+        style="@style/buttonA2"
+        android:layout_marginTop="200sp"
+        android:layout_marginLeft="10sp"
+        android:text="@string/afficherContenu"
+        android:textSize="14sp"
+        android:stateListAnimator="@null"
+        android:onClick="afficherContenuFichier"/>
+
+    <Button
+        android:layout_width="90sp"
+        android:layout_height="70sp"
+        android:id="@+id/btnEffacerContenu"
+        style="@style/buttonA2"
+        android:layout_marginTop="200sp"
+        android:layout_marginLeft="320sp"
+        android:text="@string/effacerContenu"
+        android:textSize="14sp"
+        android:stateListAnimator="@null"
+        android:onClick="effacerContenuFichier"/>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="350sp"
+        android:id="@+id/FLA2"
+        android:background="@color/backgroundA1"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/FLA2"
+            android:layout_width="match_parent"
+            android:text="@string/alignementDépart"
+            android:gravity="center"
+            android:textColor="@color/buttonBackgroundA1"/>
+
+        <TextView
+            style="@style/FLA2"
+            android:layout_width="200sp"
+            android:layout_marginTop="60sp"
+            android:text="@string/ailierGauche"
+            android:textColor="@color/buttonBackgroundA1"/>
+
+        <TextView
+            style="@style/FLA2"
+            android:layout_width="200sp"
+            android:id="@+id/TVFL1"
+            android:layout_marginTop="60sp"
+            android:layout_marginLeft="200sp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/buttonBackgroundA1"/>
+
+        <TextView
+            style="@style/FLA2"
+            android:layout_width="200sp"
+            android:text="@string/centre"
+            android:layout_marginTop="85sp"
+            android:textColor="@color/buttonBackgroundA1"/>
+
+        <TextView
+            style="@style/FLA2"
+            android:layout_width="200sp"
+            android:id="@+id/TVFL2"
+            android:layout_marginTop="85sp"
+            android:layout_marginLeft="200sp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/buttonBackgroundA1"/>
+
+        <TextView
+            style="@style/FLA2"
+            android:layout_width="200sp"
+            android:layout_marginTop="110sp"
+            android:text="@string/ailierDroit"
+            android:textColor="@color/buttonBackgroundA1"/>
+
+        <TextView
+            style="@style/FLA2"
+            android:layout_width="200sp"
+            android:id="@+id/TVFL3"
+            android:layout_marginTop="110sp"
+            android:layout_marginLeft="200sp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/buttonBackgroundA1"/>
+
+        <TextView
+            style="@style/FLA2"
+            android:layout_width="200sp"
+            android:layout_marginTop="135sp"
+            android:text="@string/défenseur"
+            android:textColor="@color/buttonBackgroundA1"/>
+
+        <TextView
+            style="@style/FLA2"
+            android:layout_width="200sp"
+            android:id="@+id/TVFL4"
+            android:layout_marginTop="135sp"
+            android:layout_marginLeft="200sp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/buttonBackgroundA1"/>
+
+        <TextView
+            style="@style/FLA2"
+            android:layout_width="200sp"
+            android:layout_marginTop="160sp"
+            android:text="@string/défenseur"
+            android:textColor="@color/buttonBackgroundA1"/>
+
+        <TextView
+            style="@style/FLA2"
+            android:layout_width="200sp"
+            android:id="@+id/TVFL5"
+            android:layout_marginTop="160sp"
+            android:layout_marginLeft="200sp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/buttonBackgroundA1"/>
+
+        <TextView
+            style="@style/FLA2"
+            android:layout_width="200sp"
+            android:layout_marginTop="210sp"
+            android:text="@string/gardien"
+            android:textColor="@color/buttonBackgroundA1"/>
+
+        <TextView
+            style="@style/FLA2"
+            android:layout_width="200sp"
+            android:id="@+id/TVFL6"
+            android:layout_marginTop="210sp"
+            android:layout_marginLeft="200sp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/buttonBackgroundA1"/>
+
+        <Button
+            style="@style/buttonA2"
+            android:layout_width="100sp"
+            android:layout_height="75sp"
+            android:text="@string/retour"
+            android:layout_marginTop="135sp"
+            android:background="@color/buttonBackgroundA1"
+            android:textColor="@color/backgroundA1"
+            android:onClick="btnRetourFL"/>
+    </FrameLayout>
 
 </RelativeLayout>

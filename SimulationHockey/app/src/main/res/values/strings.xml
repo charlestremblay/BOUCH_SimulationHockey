@@ -50,5 +50,27 @@
     <string name="oui">Oui</string>
     <string name="non">Non</string>
     <string name="saisonFinie">La saison est terminée!</string>
+    <string name="victoire">Victoire!</string>
+    <string name="défaite">Défaite en temps réglementaire</string>
+    <string name="défaiteProl">Défaite en prolongation</string>
 
+    <string name="alignementDépart">Alignement de départ</string>
+    <string name="ailierGauche">Ailier gauche : </string>
+    <string name="centre">Centre : </string>
+    <string name="ailierDroit">Ailier droit : </string>
+    <string name="défenseur">Défenseur : </string>
+    <string name="gardien">Gardien : </string>
+
+    <string name="sauvegarder">Sauvegarder</string>
+    <string name="sauvegardeRéussie">Sauvegarde réussie!</string>
+    <string name="effacerContenu">Effacer le fichier de sauvegarde</string>
+    <string name="effacementRéussi">Effacement du fichier de sauvegarde réussi.</string>
+    <string name="afficherContenu">Afficher le contenu du fichier de sauvegarde</string>
+    <string name="fichierVide">Le fichier est actuellement vide.</string>
+
+    <string name="choixÉquipe">Choix de l\'équipe</string>
+    <string name="menuÉquipe">Menu de l\'équipe</string>
+    <string name="matchActuel">Match actuel</string>
+
+    <string name="changerAnglais">Switch to English</string>
 </resources>

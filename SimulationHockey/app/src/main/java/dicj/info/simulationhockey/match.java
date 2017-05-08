@@ -29,6 +29,8 @@ public class match extends AppCompatActivity {
     protected void onCreate (Bundle SavedInstanceState){
         super.onCreate(SavedInstanceState);
         setContentView(R.layout.activity_match);
+        setTitle(R.string.matchActuel);
+        menuEquipe.matchsJoues++;
         rnd = new Random();
         TVA3 = (TextView) findViewById(R.id.TVA3);
         IVExterieur = (ImageView) findViewById(R.id.IVVisiteurs);
@@ -261,6 +263,7 @@ public class match extends AppCompatActivity {
 
     public void btnSimulation (View button) {
         TextView TVA3 = (TextView) findViewById(R.id.TVA3);
+        TextView TVResultatMatch = (TextView) findViewById(R.id.TVResultatMatch);
 
         do {
             scoreExterieur = attributionScore();
@@ -279,10 +282,12 @@ public class match extends AppCompatActivity {
                     menuEquipe.nbrDefaitesProl++;
                     menuEquipe.nbrPoints = menuEquipe.nbrPoints + 1;
                     Log.i("DICJ.info", "Défaite en prolongation.");
+                    TVResultatMatch.setText(getResources().getString(R.string.défaiteProl));
                 }
                 else{
                     menuEquipe.nbrDefaites++;
                     Log.i("DICJ.info", "Défaite en temps réglementaire.");
+                    TVResultatMatch.setText(getResources().getString(R.string.défaite));
                 }
             }
             else{
@@ -290,10 +295,12 @@ public class match extends AppCompatActivity {
                     menuEquipe.nbrVictoires++;
                     menuEquipe.nbrPoints = menuEquipe.nbrPoints + 2;
                     Log.i("DICJ.info", "Victoire!");
+                    TVResultatMatch.setText(getResources().getString(R.string.victoire));
                 }
                 else{
                     menuEquipe.nbrDefaites++;
                     Log.i("DICJ.info", "Défaite en temps réglementaire.");
+                    TVResultatMatch.setText(getResources().getString(R.string.défaite));
                 }
             }
         }
@@ -305,10 +312,12 @@ public class match extends AppCompatActivity {
                     menuEquipe.nbrDefaitesProl++;
                     menuEquipe.nbrPoints = menuEquipe.nbrPoints + 1;
                     Log.i("DICJ.info", "Défaite en prolongation.");
+                    TVResultatMatch.setText(getResources().getString(R.string.défaiteProl));
                 }
                 else{
                     menuEquipe.nbrDefaites++;
                     Log.i("DICJ.info", "Défaite en temps réglementaire.");
+                    TVResultatMatch.setText(getResources().getString(R.string.défaite));
                 }
             }
             else{
@@ -316,10 +325,12 @@ public class match extends AppCompatActivity {
                     menuEquipe.nbrVictoires++;
                     menuEquipe.nbrPoints = menuEquipe.nbrPoints + 2;
                     Log.i("DICJ.info", "Victoire!");
+                    TVResultatMatch.setText(getResources().getString(R.string.victoire));
                 }
                 else{
                     menuEquipe.nbrDefaites++;
                     Log.i("DICJ.info", "Défaite en temps réglementaire.");
+                    TVResultatMatch.setText(getResources().getString(R.string.défaite));
                 }
             }
         }

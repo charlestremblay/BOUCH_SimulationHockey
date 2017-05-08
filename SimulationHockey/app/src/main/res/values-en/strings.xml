@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Hockey Simulation</string>
+
+    <!-- Noms des équipes -->
+    <string name="ducks">Anaheim Ducks</string>
+    <string name="coyotes">Arizona Coyotes</string>
+    <string name="bruins">Boston Bruins</string>
+    <string name="sabres">Buffalo Sabres</string>
+    <string name="flames">Calgary Flames</string>
+    <string name="hurricanes">Carolina Hurricanes</string>
+    <string name="blackhawks">Chicago Blackhawks</string>
+    <string name="avalanche">Colorado Avalanche</string>
+    <string name="blue_jackets">Colombus Blue Jackets</string>
+    <string name="stars">Dallas Stars</string>
+    <string name="red_wings">Detroit Red Wings</string>
+    <string name="oilers">Edmonton Oilers</string>
+    <string name="panthers">Florida Panthers</string>
+    <string name="kings">Los Angeles Kings</string>
+    <string name="wild">Minnesota Wild</string>
+    <string name="canadiens">Montreal Canadiens</string>
+    <string name="predators">Nashville Predators</string>
+    <string name="devils">New Jersey Devils</string>
+    <string name="islanders">New York Islanders</string>
+    <string name="rangers">New York Rangers</string>
+    <string name="senators">Ottawa Senators</string>
+    <string name="flyers">Philadelphia Flyers</string>
+    <string name="penguins">Pittsburgh Penguins</string>
+    <string name="sharks">San Jose Sharks</string>
+    <string name="blues">St-Louis Blues</string>
+    <string name="lightning">Tampa Bay Lightning</string>
+    <string name="maple_leafs">Toronto Maple Leafs</string>
+    <string name="canucks">Vancouver Canucks</string>
+    <string name="capitals">Washington Capitals</string>
+    <string name="jets">Winnipeg Jets</string>
+
+    <string name="buttonA1">Start</string>
+    <string name="TVChoixEquipe">Select a team to start!</string>
+    <string name="selectTeam1">A team has been selected</string>
+    <string name="selectTeam2">Team deselected</string>
+    <string name="ficheActuelle">Current record : </string>
+    <string name="btnMatch">Simulate next game</string>
+    <string name="btnSaison">Finish off the season</string>
+    <string name="pointsObtenus">Current points : </string>
+    <string name="TVVS">VS</string>
+    <string name="exterieur">Away</string>
+    <string name="domicile">Home</string>
+    <string name="simuler">Simulate</string>
+    <string name="retour">Back</string>
+    <string name="confirmation">Are you sure you want to go back? All progress will be lost.</string>
+    <string name="oui">Yes</string>
+    <string name="non">No</string>
+    <string name="saisonFinie">The season is over!</string>
+    <string name="victoire">Victory!</string>
+    <string name="défaite">Defeat in regulation</string>
+    <string name="défaiteProl">Defeat in overtime</string>
+
+    <string name="alignementDépart">Starting line-up</string>
+    <string name="ailierGauche">Left wing : </string>
+    <string name="centre">Center : </string>
+    <string name="ailierDroit">Right wing : </string>
+    <string name="défenseur">Defenceman : </string>
+    <string name="gardien">Goaltender : </string>
+
+    <string name="sauvegarder">Save</string>
+    <string name="sauvegardeRéussie">Save successful!</string>
+    <string name="effacerContenu">Erase content from the save file</string>
+    <string name="effacementRéussi">Successfully erased the file content.</string>
+    <string name="afficherContenu">Display content from the save file</string>
+    <string name="fichierVide">The file is currently empty.</string>
+
+    <string name="choixÉquipe">Choose your team</string>
+    <string name="menuÉquipe">Team menu</string>
+    <string name="matchActuel">Current game</string>
+
+    <string name="switchFrench">Changer pour Français</string>
+
+</resources>

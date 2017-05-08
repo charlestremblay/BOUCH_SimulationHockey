@@ -17,6 +17,13 @@
         style="@style/buttonA1"
         android:onClick="boutonActivite1"/>
 
+    <Button
+        android:id="@+id/btnLanguage"
+        style="@style/buttonA1"
+        android:onClick="changerLanguage"
+        android:text="@string/changerAnglais"
+        android:textSize="20sp"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="30sp"
